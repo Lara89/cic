@@ -1,0 +1,11 @@
+<div class="about-us container">
+  <div class="col-sm-7">
+    <div class="col-sm-12">
+      <h2>{{about.title}}</h2>
+    </div>
+    <div [innerHtml]="about.body | keepHtml"></div>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-aligned-right" src="{{about.image}}">
+  </div>
+</div>

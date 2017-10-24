@@ -1,0 +1,10 @@
+<div class="{{data.class}}">
+  <h4>{{data.title}}</h4>
+  <p *ngFor="let list of data.list">
+    <i *ngIf="list.icon" class={{list.icon}}></i>
+    <span *ngIf="list.url">
+      <a href="{{list.url}}" target="{{list.target}}">{{list.body}}</a>
+    </span>
+    <span *ngIf="!list.url">{{list.body}}</span>
+  </p>
+</div>

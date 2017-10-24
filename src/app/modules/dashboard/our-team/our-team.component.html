@@ -1,0 +1,30 @@
+<div class="our-team">
+  <div class="our-team-header">
+    <div class="container">
+      <h2>{{team.title}}</h2>
+      <p>{{team.body}}</p>
+    </div>
+  </div>
+  <div class="our-team-content">
+    <div class="container slick-slider-two-options">
+
+      <div class="team-member" *ngFor="let player of team.team">
+        <div class="team-member-content">
+          <div class="left-column float-left">
+            <img class="profile-picture" src="{{player.picture}}" alt="">
+          </div>
+          <div class="right-column float-left">
+            <h3>{{player.name}}</h3>
+            <p><span *ngFor="let role of player.roles">{{role}} </span></p>
+            <div class="button-holder">
+              <a href="mailto:{{player.email}}" class="btn btn-primary">{{player.emailTitle}}</a>
+              <a href="{{player.actionURL}}" class="btn btn-primary">{{player.action}}</a>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
