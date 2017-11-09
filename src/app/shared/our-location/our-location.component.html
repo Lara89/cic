@@ -1,7 +1,0 @@
-<div class="our-location google-map" *ngFor="let location of locations">
-  <div id="map" class="map" title="{{location.lat}},{{location.lng}}"></div>
-  <div class="map-information">
-    <p class="big-text">{{location.message}}</p>
-    <cic-column *ngFor="let column of location.columns" [columnType]="column.name"></cic-column>
-  </div>
-</div>
