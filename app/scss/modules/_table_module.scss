@@ -1,0 +1,81 @@
+.table-module {
+	margin-bottom: 40px;
+	padding: 20px 30px;
+	background: $white;
+	@include box-shadow($shadow);
+
+	table {
+		width: 100%;
+	}
+	th {
+		padding-bottom: 10px;
+	}
+	td {
+		padding: 10px 0 20px 0;
+	}
+	.recipe-title {
+		border-top: 2px solid #F9F9F9;
+	}
+	.view-more-btn {
+		width: 100px;
+		text-align: right;
+	}
+	.view-less {
+		display: none;
+	}
+	.opened {
+		.view-less {
+			display: block;
+		}
+		.view-more {
+			display: none;
+		}
+	}
+	.add-to-cart-btn {
+		margin-bottom: 10px;
+	}
+	.table-row-details {
+		td {
+			padding: 0;
+		}
+		.details-element {
+			margin-bottom: 5px;
+			padding: 10px 30px;
+			background: $light-grey-3;
+		}
+		.bill-product-element {
+			position: relative;
+			padding: 10px 90px 10px 30px;
+		}
+		.price-element {
+			position: absolute;
+			right: 40px;
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+		table,
+		tbody,
+		tr,
+		td {
+			display: block;
+			width: 100%;
+		}
+		thead {
+			display: none;
+		}
+		td {
+			padding-bottom: 10px;
+		}
+		.btn {
+			margin-bottom: 30px;
+			float: none;
+		}
+		.title {
+			color: $black;
+		}
+		.view-more-btn {
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,145 @@
+//Farmacy Products Module
+.farmacy-elements-container {
+	display: flex;
+	flex-wrap: wrap;
+	color: $dark-grey;
+	h3 {
+		margin-top: 40px;
+		font-size: 14px;
+ 		color: $dark-grey;
+	}
+	a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+	}
+	.product-element {
+		margin-bottom: 30px;
+		&:hover {
+			.product-actions {
+				opacity: 1;
+				-webkit-animation: fadein 0.3s linear forwards;
+				animation: fadein 0.3s linear forwards;
+			}
+		}
+		.product-element-inner {
+			padding: 10px 20px;
+			text-align: center;
+			background: $white;
+			@include box-shadow($shadow);
+		}
+		.product-image {
+			img {
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+		.product-information {
+			box-shadow: none;
+		}
+		.product-actions {
+			padding-top: 120px;
+			position: absolute;
+			top: 0;
+			left: 15px;
+			right: 15px;
+			bottom: 0;
+			background: rgba(255,255,255,0.9);
+			opacity: 0;
+			-webkit-animation: fadeout 0.3s linear forwards;
+			animation: fadeout 0.3s linear forwards;
+			.btn {
+				display: inline-block;
+				height: auto;
+				width: 100%;
+			}
+		}
+		.company-name,
+		.product-price {
+			font-size: 14px;
+			color: $dark-grey;
+		}
+		.company-name {
+			color: $grey;
+		}
+	}
+	.product-page-pagination {
+		width: 100%;
+		.pagination {
+			float: right;
+		}
+		&.product-page-pagination-bottom {
+			margin-bottom: 100px;
+		}
+		&.product-page-pagination-up {
+			.pagination {
+				margin-top: 0;
+				margin-right: 15px;
+			}
+		}
+	}
+	.similar-products-module & {
+		margin-bottom: 100px;
+		@media (max-width: 400px) {
+			padding: 0;
+			.product-element {
+				padding: 0;
+			}
+			.row {
+				margin: 0;
+			}
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		.product-information {
+			padding-left: 30px;
+			padding-right: 0;
+			text-align: left;
+			h3 {
+				margin-top: 10px;
+			}
+		}
+	}
+	@media (max-width: 520px) {
+		.product-element {
+			width: 100%;
+		}
+	}
+	@media (max-width: 400px) {
+		.product-image,
+		.product-information {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
+
+.similar-products-module {
+	@media (max-width: 400px) {
+		padding: 0;
+		.product-element {
+			width: 100%;
+			padding: 0;
+		}
+		.row {
+			margin: 0;
+		}
+	}
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

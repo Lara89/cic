@@ -1,0 +1,23 @@
+.form-information-module {
+    background: $white;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    @include box-shadow($shadow);
+    
+    label {
+		margin-bottom: 0;
+		line-height: 30px;
+    }
+    .checkbox {
+    	margin: 30px 0 20px 0;
+    	label {
+			padding-left: 25px;
+			font-size: 16px;
+    	}
+    	input {
+			margin-left: 0;
+			top: 5px;
+			left: 0;
+    	}
+    }
+}
