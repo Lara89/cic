@@ -1,7 +1,7 @@
 {
   "name": "cic",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. npm install 2. gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,18 +9,27 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "browser-sync": "~2.18.12",
+    "del": "~3.0.0",
+    "gulp": "~3.9.1",
     "gulp-bower": "0.0.13",
-    "gulp-cache": "^0.4.6",
-    "gulp-css-adjust-url-path": "^1.0.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-cache": "~0.4.6",
+    "gulp-css-adjust-url-path": "~1.0.2",
+    "gulp-cssnano": "~2.1.2",
+    "gulp-imagemin": "~3.3.0",
     "gulp-jquery": "1.1.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "run-sequence": "^2.0.0"
-  }
+    "gulp-sass": "~3.1.0",
+    "gulp-uglify": "~3.0.0",
+    "gulp-useref": "~3.1.2",
+    "run-sequence": "~2.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lara89/cic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lara89/cic/issues"
+  },
+  "homepage": "https://github.com/Lara89/cic#readme"
 }
